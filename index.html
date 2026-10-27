@@ -18,15 +18,16 @@
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="പരമപരിശുദ്ധ ദിവ്യകാരുണ്യ ധ്യാനം പോസ്റ്റർ">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#2a1206">
+  <meta name="theme-color" content="#1c0d05">
 
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@600;800&family=Noto+Sans+Malayalam:wght@400;600;700&family=Noto+Serif+Malayalam:wght@500;700&display=swap">
-  <link rel="preload" as="image" href="assets/hero-monstrance.jpg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@600;800&family=Cinzel:wght@500;700&family=Noto+Serif+Malayalam:wght@400;500;600;700&display=swap">
+  <link rel="preload" as="image" href="assets/vortex.jpg">
+  <link rel="preload" as="image" href="assets/monstrance.webp">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -48,12 +49,15 @@
   <div class="clip">
   <div class="page">
     <header class="hero">
-      <div class="hero-art" aria-hidden="true">
-        <div class="rays"></div>
-        <img src="assets/hero-monstrance.jpg" alt="" width="1170" height="615" fetchpriority="high">
-        <div class="host-glow"></div>
+      <div class="vault" aria-hidden="true">
+        <div class="glory"></div>
+        <div class="oculus"><img class="vortex" src="assets/vortex.jpg" alt="" width="880" height="880"></div>
+        <div class="halo"></div>
+        <img class="monstrance" src="assets/monstrance.webp" alt="" width="435" height="630" fetchpriority="high">
+        <div class="vault-clouds"></div>
       </div>
 
+      <p class="inscription" lang="la">ECCE PANIS ANGELORVM</p>
       <h1 class="title">
         <span class="gold title-top">പരമപരിശുദ്ധ</span>
         <span class="title-main"><span class="gold">ദിവ്യകാരുണ്യ</span> <span class="gold">ധ്യാനം</span></span>
@@ -107,36 +111,46 @@
         </div>
       </div>
 
-      <p class="psalm">
-        <span class="gold psalm-text">വരുവിൻ നമുക്ക് കുമ്പിട്ടാരാധിക്കാം</span>
-        <span class="ref-pill">സങ്കീർത്തനം 95:6</span>
-      </p>
+      <div class="putti" aria-hidden="true">
+        <img src="assets/putti.jpg" alt="" width="1200" height="600" loading="lazy">
+      </div>
 
-      <section class="verse-wrap" aria-label="തിരുവചനം">
-        <figure class="verse">
-          <svg class="flourish flourish-top" aria-hidden="true"><use href="#i-flourish"/></svg>
+      <section class="fresco-wrap" aria-label="തിരുവചനം">
+        <figure class="fresco">
+          <img class="fresco-hands" src="assets/hands.jpg" alt="" width="1300" height="498" loading="lazy">
           <blockquote>
-            <p>ജീവിക്കുന്നവനായ പിതാവ് എന്നെ അയച്ചു;<br>
-            <em>ഞാൻ പിതാവുമൂലം ജീവിക്കുന്നു.</em><br>
-            അതുപോലെ, എന്നെ ഭക്ഷിക്കുന്നവൻ<br>
+            <p><span>ജീവിക്കുന്നവനായ പിതാവ് എന്നെ അയച്ചു;</span>
+            <em>ഞാൻ പിതാവുമൂലം ജീവിക്കുന്നു.</em>
+            <span>അതുപോലെ, എന്നെ ഭക്ഷിക്കുന്നവൻ</span>
             <em>ഞാൻ മൂലം ജീവിക്കും.</em></p>
           </blockquote>
           <figcaption>യോഹന്നാൻ 6 : 57</figcaption>
-          <svg class="flourish flourish-bottom" aria-hidden="true"><use href="#i-flourish"/></svg>
         </figure>
       </section>
 
+      <section class="arcade" aria-labelledby="psalm-heading">
+        <figure class="niche niche-a" aria-hidden="true"><img src="assets/angel-viola.jpg" alt="" width="540" height="720" loading="lazy"></figure>
+        <div class="arcade-text">
+          <p class="inscription" lang="la">VENITE ADOREMVS</p>
+          <h2 class="gold psalm-text" id="psalm-heading">വരുവിൻ നമുക്ക് കുമ്പിട്ടാരാധിക്കാം</h2>
+          <span class="ref-pill">സങ്കീർത്തനം 95:6</span>
+        </div>
+        <figure class="niche niche-b" aria-hidden="true"><img src="assets/angel-tambourine.jpg" alt="" width="540" height="720" loading="lazy"></figure>
+      </section>
+
+      <div class="cornice" aria-hidden="true"></div>
+
       <section class="info">
-        <article class="card card-leader">
+        <article class="panel panel-leader">
           <div class="portrait"><img src="assets/fr-jose.png" alt="ഫാ. ജോസ് ഉപ്പാണി" width="360" height="360" loading="lazy"></div>
-          <h2 class="card-kicker">ധ്യാനം നയിക്കുന്നത്</h2>
-          <p class="gold card-title">ഫാ. ജോസ് ഉപ്പാണി</p>
+          <h2 class="panel-kicker">ധ്യാനം നയിക്കുന്നത്</h2>
+          <p class="gold panel-title">ഫാ. ജോസ് ഉപ്പാണി</p>
         </article>
-        <article class="card card-venue">
+        <article class="panel panel-venue">
           <div class="venue-icon" aria-hidden="true"><svg><use href="#i-pin"/></svg></div>
-          <h2 class="card-kicker">ധ്യാനകേന്ദ്രം</h2>
-          <p class="gold card-title">ചിറ്റൂർ ധ്യാനകേന്ദ്രം</p>
-          <p class="card-sub">എറണാകുളം</p>
+          <h2 class="panel-kicker">ധ്യാനകേന്ദ്രം</h2>
+          <p class="gold panel-title">ചിറ്റൂർ ധ്യാനകേന്ദ്രം</p>
+          <p class="panel-sub">എറണാകുളം</p>
           <a class="btn btn-gold" id="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Chittoor+Retreat+Centre+Ernakulam+Kerala" target="_blank" rel="noopener">
             <svg aria-hidden="true"><use href="#i-pin"/></svg>വഴി കാണുക
           </a>
@@ -183,9 +197,11 @@
 
     <footer class="footer">
       <svg class="flourish" aria-hidden="true"><use href="#i-flourish"/></svg>
-      <p>എറണാകുളം ചിറ്റൂർ ധ്യാനകേന്ദ്രം · നവംബർ 2026</p>
+      <p>എറണാകുളം ചിറ്റൂർ ധ്യാനകേന്ദ്രം, നവംബർ 2026</p>
+      <p class="credits" lang="en">Art: Raphael, Michelangelo, Melozzo da Forlì, Gustave Doré</p>
     </footer>
   </div>
+  <div class="heaven-floor" aria-hidden="true"></div>
   </div>
 
   <dialog class="lightbox" id="lightbox" aria-label="പോസ്റ്റർ">
