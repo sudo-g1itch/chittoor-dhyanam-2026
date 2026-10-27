@@ -23,10 +23,8 @@
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@600;800&family=Cinzel:wght@500;700&family=Noto+Serif+Malayalam:wght@400;500;600;700&display=swap">
-  <link rel="preload" as="image" href="assets/vortex.jpg">
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/manjari-bold.woff2" crossorigin>
+  <link rel="preload" as="image" href="assets/vortex-760.webp" imagesrcset="assets/vortex-480.webp 480w, assets/vortex-760.webp 760w" imagesizes="(min-width: 700px) 600px, 86vw">
   <link rel="preload" as="image" href="assets/monstrance.webp">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -51,7 +49,7 @@
     <header class="hero">
       <div class="vault" aria-hidden="true">
         <div class="glory"></div>
-        <div class="oculus"><img class="vortex" src="assets/vortex.jpg" alt="" width="880" height="880"></div>
+        <div class="oculus"><img class="vortex" src="assets/vortex-760.webp" srcset="assets/vortex-480.webp 480w, assets/vortex-760.webp 760w" sizes="(min-width: 700px) 600px, 86vw" alt="" width="760" height="760"></div>
         <div class="halo"></div>
         <img class="monstrance" src="assets/monstrance.webp" alt="" width="435" height="630" fetchpriority="high">
         <div class="vault-clouds"></div>
@@ -112,12 +110,12 @@
       </div>
 
       <div class="putti" aria-hidden="true">
-        <img src="assets/putti.jpg" alt="" width="1200" height="600" loading="lazy">
+        <img src="assets/putti-1000.webp" srcset="assets/putti-640.webp 640w, assets/putti-1000.webp 1000w" sizes="(min-width: 760px) 760px, 100vw" alt="" width="1000" height="500" loading="lazy" decoding="async">
       </div>
 
       <section class="fresco-wrap" aria-label="തിരുവചനം">
         <figure class="fresco">
-          <img class="fresco-hands" src="assets/hands.jpg" alt="" width="1300" height="498" loading="lazy">
+          <img class="fresco-hands" src="assets/hands-900.webp" srcset="assets/hands-600.webp 600w, assets/hands-900.webp 900w" sizes="(min-width: 640px) 600px, calc(100vw - 32px)" alt="" width="900" height="345" loading="lazy" decoding="async">
           <blockquote>
             <p><span>ജീവിക്കുന്നവനായ പിതാവ് എന്നെ അയച്ചു;</span>
             <em>ഞാൻ പിതാവുമൂലം ജീവിക്കുന്നു.</em>
@@ -129,20 +127,20 @@
       </section>
 
       <section class="arcade" aria-labelledby="psalm-heading">
-        <figure class="niche niche-a" aria-hidden="true"><img src="assets/angel-viola.jpg" alt="" width="540" height="720" loading="lazy"></figure>
+        <figure class="niche niche-a" aria-hidden="true"><img src="assets/angel-viola.webp" alt="" width="420" height="560" loading="lazy" decoding="async"></figure>
         <div class="arcade-text">
           <p class="inscription" lang="la">VENITE ADOREMVS</p>
           <h2 class="gold psalm-text" id="psalm-heading">വരുവിൻ നമുക്ക് കുമ്പിട്ടാരാധിക്കാം</h2>
           <span class="ref-pill">സങ്കീർത്തനം 95:6</span>
         </div>
-        <figure class="niche niche-b" aria-hidden="true"><img src="assets/angel-tambourine.jpg" alt="" width="540" height="720" loading="lazy"></figure>
+        <figure class="niche niche-b" aria-hidden="true"><img src="assets/angel-tambourine.webp" alt="" width="420" height="560" loading="lazy" decoding="async"></figure>
       </section>
 
       <div class="cornice" aria-hidden="true"></div>
 
       <section class="info">
         <article class="panel panel-leader">
-          <div class="portrait"><img src="assets/fr-jose.png" alt="ഫാ. ജോസ് ഉപ്പാണി" width="360" height="360" loading="lazy"></div>
+          <div class="portrait"><img src="assets/fr-jose.webp" alt="ഫാ. ജോസ് ഉപ്പാണി" width="300" height="300" loading="lazy" decoding="async"></div>
           <h2 class="panel-kicker">ധ്യാനം നയിക്കുന്നത്</h2>
           <p class="gold panel-title">ഫാ. ജോസ് ഉപ്പാണി</p>
         </article>
@@ -174,10 +172,10 @@
         <p class="section-sub">വലുതാക്കി കാണാൻ ചിത്രത്തിൽ തൊടുക</p>
         <div class="poster-grid">
           <button class="poster-thumb" type="button" data-full="assets/poster-square.jpg" data-name="chittoor-dhyanam-poster-1.jpg">
-            <img src="assets/poster-square.jpg" alt="ധ്യാനം പോസ്റ്റർ 1" width="1077" height="1083" loading="lazy">
+            <img src="assets/poster-square-thumb.webp" alt="ധ്യാനം പോസ്റ്റർ 1" width="700" height="704" loading="lazy" decoding="async">
           </button>
           <button class="poster-thumb" type="button" data-full="assets/poster-tall.jpg" data-name="chittoor-dhyanam-poster-2.jpg">
-            <img src="assets/poster-tall.jpg" alt="ധ്യാനം പോസ്റ്റർ 2" width="598" height="1280" loading="lazy">
+            <img src="assets/poster-tall-thumb.webp" alt="ധ്യാനം പോസ്റ്റർ 2" width="330" height="706" loading="lazy" decoding="async">
           </button>
         </div>
       </section>

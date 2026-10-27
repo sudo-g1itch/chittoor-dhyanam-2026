@@ -1,3 +1,33 @@
+/* Self-hosted fonts, cut down to the characters this page uses (see README).
+   Manjari joins Malayalam letters in the traditional script, like the posters.
+   "block" keeps the browser from flashing a fallback font that would split the letters. */
+@font-face {
+  font-family: "Manjari";
+  font-weight: 100 550;
+  font-display: block;
+  size-adjust: 110%;
+  src: url("assets/fonts/manjari-regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Manjari";
+  font-weight: 551 900;
+  font-display: block;
+  size-adjust: 110%;
+  src: url("assets/fonts/manjari-bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Cinzel";
+  font-weight: 100 600;
+  font-display: swap;
+  src: url("assets/fonts/cinzel-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Cinzel";
+  font-weight: 601 900;
+  font-display: swap;
+  src: url("assets/fonts/cinzel-700.woff2") format("woff2");
+}
+
 :root {
   color-scheme: dark;
 
@@ -18,8 +48,8 @@
   --cream: #fbeed3;
   --cream-dim: #e0c494;
 
-  --font-display: "Baloo Chettan 2", "Noto Serif Malayalam", system-ui, sans-serif;
-  --font-body: "Noto Serif Malayalam", Georgia, serif;
+  --font-display: "Manjari", "Noto Sans Malayalam", system-ui, sans-serif;
+  --font-body: "Manjari", "Noto Sans Malayalam", system-ui, sans-serif;
   --font-latin: "Cinzel", "Trajan Pro", Georgia, serif;
 
   --gold-text: linear-gradient(180deg, #fffbe2 0%, #ffe27a 30%, #f5b82e 55%, #c27a0c 78%, #f7d36a 100%);
@@ -512,10 +542,11 @@ h1, h2, p, figure, blockquote, ul { margin: 0; }
   font-size: 0.95rem;
   color: #6b4a2a;
 }
+.fresco figcaption { white-space: nowrap; }
 .fresco figcaption::before,
 .fresco figcaption::after {
   content: "";
-  width: 48px;
+  flex: 0 1 48px;
   height: 1.5px;
   background: linear-gradient(90deg, transparent, #9a6b2c);
 }
